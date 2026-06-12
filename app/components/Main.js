@@ -2,21 +2,21 @@ import Image from "next/image";
 
 export default function Main() {
 return (
-    <main className="min-h-screen w-full bg-gradient-to-br from-white via-slate-100 to-sky-50 px-6 py-16 text-slate-900">
+    <main className="min-h-screen w-full bg-green-700 px-6 py-16 text-white-900">
     <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-10 lg:flex-row lg:gap-16">
-        <div className="max-w-2xl space-y-6 animate-slide-up">
+        <div className="max-w-2xl space-y-6 ">
     
-        <h1 className="text-2x2 font-extrabold tracking-tight sm:text-4xl">
+        <h1 className="text-5xl font-semibold ">
             Hi, I&apos;m Sumit Dhakal
         </h1>
-        <p className="text-base leading-5 text-slate-400 sm:text-lg">
+        <p className=" leading-5 text-white-100 text-lg">
             Aspring a fullstack devloper  with curiosity and contributing
         in the inovative projects.
         </p>
-        <div className="flex flex-col gap-3 sm:flex-row">
+        <div className="flex flex-col gap-4 flex-row">
             <a
             href="/project"
-            className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-200 transition hover:-translate-y-0.5 hover:bg-slate-700"
+            className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white"
             >
             View projects
             </a>
@@ -31,13 +31,13 @@ return (
 
         <div className="relative flex w-full max-w-xl items-center justify-center">
         <div className="pointer-events-none absolute inset-x-0 top-0 h-72 rounded-full bg-sky-20/50 blur-3xl" />
-        <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white/20 p-4 shadow-2xl shadow-slate-100/50 animate-float">
+        <div className="relative overflow-hidden rounded-[5rem] border border-slate-500 bg-black/10 p-1">
             <Image
             src="/hero.png"
             alt="Hero illustration"
             width={400}
             height={400}
-            className="h-auto w-full rounded-[1.5rem] object-cover"
+            className="h-auto w-full rounded-[5.5rem] object-cover"
             />
         </div>
         </div>

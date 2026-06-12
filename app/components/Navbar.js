@@ -7,7 +7,7 @@ export default function Navbar() {
     ]
     return (
         <>
-    <div className="h-10 py-5 w-full flex py-10 items-center justify-center py-4 space-x-5 bg-blue-100">
+    <div className="h-10 py-5 w-full flex py-10 items-center justify-center py-4 space-x-5 bg-red-100">
             {items.map((item, index) => (
             <a 
             key={index} 
