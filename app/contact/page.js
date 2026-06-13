@@ -40,28 +40,27 @@ export default function Contact() {
         <>
             <Navbar />
 
-            <main className="min-h-screen bg-green-700 px-6 py-16 text-white">
-                <section className="mx-auto max-w-6xl gap-10 lg:flex lg:items-start">
-                    <div className="lg:w-1/2 space-y-6">
-                        <h1 className="text-5xl font-semibold text-white">Get in touch</h1>
+            <main className="min-h-screen bg-green-700 px-9 py-10 text-white">
+                <section className="mx-auto max-w-6xl gap-20 lg:flex lg:items-start">
+                    <div className="lg:w-1/3 space-y-10 space-x-10">
+                    <h1 className="text-5xl font-semibold text-white">Get in touch</h1>
                         <p className="text-lg leading-7 text-white">
-                            I&apos;m open to new projects and collaborations. Send a message and I&apos;ll get back to you as soon as possible.
+                        I&apos;m open to new projects and collaborations. Send a message and I&apos;ll get back to you as soon as possible.
                         </p>
 
-                        <div className="border border-white/20 bg-slate-950 p-5">
-                            <h3 className="text-lg font-semibold text-white">Contact</h3>
-                            <p className="mt-4 text-white leading-7">
-                                Itahari-04, Sunsari, Nepal
-                                <br />
-                                sumitdhakal51@gmail.com
-                                <br />
-                                +977-9827443797
+                    <div className="  p-5 h-45 10 bg-black">
+                        <h3 className="text-lg font-semibold  text-white">Contact</h3>
+                        <p className="mt-4 text-white leading-7">
+                            Itahari-04, Sunsari, Nepal
+                            <br />sumitdhakal51@gmail.com
+                            <br />
+                            +977-9827443797
                             </p>
                         </div>
                     </div>
 
                     <div className="mt-8 lg:mt-0 lg:w-1/2">
-                        <form onSubmit={handleSend} className="relative space-y-4 bg-slate-900 p-6 rounded-md border border-slate-700">
+                        <form onSubmit={handleSend} className="relative space-y-4 bg-slate-900 p-6 rounded-md border border-slate-400">
                             <div>
                                 <label className="block text-sm mb-1 text-white font-medium">Name</label>
                                 <input value={name} onChange={(e) => setName(e.target.value)} className="w-full rounded px-3 py-2 bg-slate-800 border border-slate-700 text-white placeholder-slate-400 focus:outline-none focus:border-green-500" placeholder="Your name" />
@@ -87,15 +86,18 @@ export default function Contact() {
 
                                     <div className="shuttle-container" aria-hidden>
                                         <svg ref={shuttleRef} className="shuttle" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 21l21-9L2 3v7l15 2-15 2v6z" fill="#fff" />
+                                        <path d="M2 21l21-9L2 3v7l15 2-15 2v6z" fill="#fff" />
                                         </svg>
+
                                     </div>
+
                                 </div>
-                            </div>
-                        </form>
-                    </div>
-                </section>
-            </main>
+                            
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </main>
 
             <Footer />
         </>

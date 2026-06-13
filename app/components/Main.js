@@ -7,7 +7,7 @@ return (
         <div className="max-w-2xl space-y-6 ">
     
         <h1 className="text-5xl font-semibold ">
-            Hi, I&apos;m Sumit Dhakal
+        SUMIT DAHKAL
         </h1>
         <p className=" leading-5 text-white-100 text-lg">
             Aspring a fullstack devloper  with curiosity and contributing
@@ -31,13 +31,13 @@ return (
 
         <div className="relative flex w-full max-w-xl items-center justify-center">
         <div className="pointer-events-none absolute inset-x-0 top-0 h-72 rounded-full bg-sky-20/50 blur-3xl" />
-        <div className="relative overflow-hidden rounded-[5rem] border border-slate-500 bg-black/10 p-1">
+        <div className=" rounded-[20rem] border border-slate-500 bg-black/10 p-1">
             <Image
-            src="/hero.png"
+            src="/herono.1.jpg"
             alt="Hero illustration"
             width={400}
-            height={400}
-            className="h-auto w-full rounded-[5.5rem] object-cover"
+            height={100}
+            className="h-auto w-full rounded-[7.1rem] object-cover"
             />
         </div>
         </div>

@@ -5,7 +5,9 @@ const skills = [
 "React",
 "Next.js",
 "Node.js",
-"Express",
+"numpy",
+"panda",
+"servlet",
 "MongoDB",
 "Tailwind CSS",
 "JavaScript",
@@ -56,21 +58,40 @@ return (
                 </div>
 
                 <div className=" p-10 bg-black h-200">
-                    <h3 className=" font-semibold text-2xl m-4 font-bold text-white ">What I love building</h3>
+                    <h3 className=" font-semibold text-2xl m-4 font-bold text-white ">What I building</h3>
+                    
                     <p className="mt-3  text-white  leading-7">
-                    Engaging web apps with smart APIs, 
-                    polished interactive interfaces, and scalable architecture.
-
-        
+                        Inventory management system <br/>
+                        vechile booking system<br/>
+                        Anti-theft bike detication<br/>
+                        CIVIC watch
                     </p>
-                <div className="text-white">
-                    <p className="font-semibold text-2xl m-4 font-bold text-white">Connectivity</p>
-                    <p className=" mt-4 leading-6 text-white-400">Networking, APIs, and system integration.</p>
 
-                <p className="text-2xl m-4 font-bold text-white">Professional vibes</p>
+                <div className="text-white">
+                    <p className=" text-2xl m-4 font-bold text-white">Education</p>
+                    <h2 className=" mt-4 leading-6  text-white-400"> secondary: merryland higher secondary school 2023 passout faculty- business management 
+            
+                    </h2>
+                
+                <h2 className=" mt-4 leading-6  text-white-400"> undergraduate: Itahari international college currently running/ faculty- BSC-HONS computing 
+            
+                    </h2>
+                
+
+                <p className="text-2xl m-4 font-bold text-white">Project and certification</p>
                 <p className="mt-4 text-white leading-7">
-                I seek projects that balance visual polish with useful functionality. I love collaborating on web products that solve real problems.
+                    COIT - college of information technology: computer operator<br/>
+                    LOC - computer fundamentals, nteworking, hardware concepts, multi-media
                 </p>
+
+                <p className="text-2xl m-4 font-bold text-white">Soft skills</p>
+                <p className="mt-4 text-white leading-7">
+                communication <br/>
+                leadership <br/>
+                team work<br/>
+                punctuality<br/>
+                </p>
+
                 </div>
                 
                 </div>
@@ -91,42 +112,42 @@ return (
 
         </section>
 
-        <section className=" g:flex-row h-100 px-10">
-            <div className=" bg-slate-900/100 p-5   ">
+        <section className=" g:flex-row h-100 px-1">
+            <div className=" bg-slate-600 p-3   ">
             <h2 className="text-5xl font-bold text-white text-white-300">My approach</h2>
 
             <div className="mt-5 grid gap-2 sm:grid-cols-5">
                 <div className="  bg-slate-950 p-5">
                 <h3 className="font-semibold text-white">Design</h3>
                 <p className="mt-2 text-sm text-white leading-7">
-                    Clean layouts, vibrant gradients, and enjoyable motion.
+                plan the system structure in Clean layouts, vibrant gradients subtle motion UI friendly.
                 </p>
                 </div>
                 <div className=" bg-slate-950 p-5">
                 <h3 className="font-semibold text-white">Development</h3>
                 <p className="mt-2 text-sm text-white leading-7">
-                    Scalable code with modern frameworks and maintainable architecture.
+                Trun the design into beautiful and Scalable code with modern frameworks.
                 </p>
                 </div>
 
                 <div className=" bg-slate-950 p-5">
                 <h3 className="font-semibold text-white">Sclable</h3>
                 <p className="mt-2 text-sm text-white leading-7">
-                    Scalable code with modern frameworks and maintainable architecture.
+                build system that handle growing users in the future easily through Scalable code with modern frameworks and maintainable architecture.
                 </p>
                 </div>
 
                 <div className=" bg-slate-950 p-5">
                 <h3 className="font-semibold text-white">security</h3>
                 <p className="mt-2 text-sm text-white leading-7">
-                    Scalable code with modern frameworks and maintainable architecture.
+                    protect the system along with data from threats, attracts, and unauthorize access through optimization a long with secure system design. 
                 </p>
                 </div>
 
                 <div className=" bg-slate-950 p-5">
                 <h3 className="font-semibold text-white">performance</h3>
                 <p className="mt-2 text-sm text-white leading-7">
-                    Scalable code with modern frameworks and maintainable architecture.
+                    making the system efficiently and reliable for mass users through performance optimization in the system. 
                 </p>
                 </div>
 

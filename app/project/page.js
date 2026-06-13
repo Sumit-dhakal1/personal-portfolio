@@ -6,40 +6,33 @@ import Footer from "../components/Footer";
 
 const projects = [
     {
-        title: "Portfolio Website",
-        description: "A personal portfolio built with Next.js and Tailwind CSS.",
-        details:
-            "Built with the app directory, responsive design, and deployment-ready optimizations. Uses Next Image for optimized assets.",
-        href: "/",
+        title: "Inventory management system",
+        description: "A project that is build for optimize work of vendor. ",
+        details:"technology used: python and database schema design. the reason behind building this project is to automate the task of vendor to calculate and store their stock record ,selling stock on the basis of brand name and so on. ",
+        
     },
     {
-        title: "Task Manager",
-        description: "A fullstack task manager with authentication and REST API.",
+        title: "Anti theft bike detection system",
+        description: "A system that is build for to secure the two-wheeler from open place. basically it is connected to the IOT devices where the sensor reading the movement of two-wheeler and it sends notification into email of owner",
         details:
-            "Implements JWT auth, CRUD operations, and a simple role-based permission layer. Backend built with Express and MongoDB.",
-        href: "/",
+            "technology software used: Python, JavaScript, Node.js, MongoDB--- technology hardware used: ESP32, MPU6050, NEO-6M gps, active piezo buzzer. " 
+    
     },
     {
-        title: "E-commerce Mock",
-        description: "Shopping UI with cart state and product pages.",
+        title: "vehical booking system",
+        description: "A system is build for the booking the vechical for long-trip as well as short destination with driver or without driver integerate online payment system, pre-booking features, cancel booking and so on ",
         details:
-            "Demo storefront showcasing product listing, cart state, and checkout flow using local state and context.",
-        href: "/",
+            "technology used: react, node.js, JavaScript MongoDB",
+        
     },
     {
-        title: "Blog Engine",
-        description: "Markdown-powered blog with dynamic routes and SEO.",
+        title: "civic watch",
+        description: "A system is build full-stack website to raised voice of public here report the issues, facing into our society ",
         details:
-            "Supports markdown posts, syntax highlighting, and static generation for fast performance.",
-        href: "/",
+            "technology used: java, servlet, jsp",
+        
     },
-    {
-        title: "Realtime Chat",
-        description: "A lightweight realtime chat using WebSockets.",
-        details:
-            "Features rooms, typing indicators, and basic persistence. Built with Socket.IO and a simple Node server.",
-        href: "/",
-    },
+
 ];
 
 export default function Project() {
@@ -55,11 +48,11 @@ export default function Project() {
 
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {projects.map((p, idx) => (
-        <article key={p.title} className="rounded bg-slate-900 p-6">
-                                <h3 className="text-2xl font-semibold mb-2 text-white">{p.title}</h3>
-                                <p className="text-sm text-white mb-4">{p.description}</p>
+        <article key={p.title} className=" bg-slate-700   p-6">
+                                <h3 className="text-2xl font-semibold mb-4 text-white">{p.title}</h3>
+                                <p className="text-sm text-white mb-8">{p.description}</p>
 
-                                <div className="flex gap-3">
+                                <div className="flex gap-20">
                                     <button
                                         onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
                                         className="inline-flex items-center rounded-full bg-slate-800 px-4 py-2 text-sm font-medium text-white"
@@ -67,13 +60,11 @@ export default function Project() {
                                         {openIndex === idx ? "Hide details" : "View more"}
                                     </button>
 
-                                    <a href={p.href} className="inline-flex items-center rounded-full bg-slate-700 px-4 py-2 text-sm font-medium text-white">
-                                        Visit
-                                    </a>
+                                
                                 </div>
 
                                 {openIndex === idx && (
-                                    <div className="mt-4 rounded bg-slate-800 p-4 text-sm text-white">
+                                    <div className="mt-4 rounded bg-black p-4 text-sm text-white">
                                         {p.details}
                                     </div>
                                 )}
