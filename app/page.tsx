@@ -1,26 +1,25 @@
-import Image from "next/image";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Main from "./components/Main";
-import { exportPages } from "next/dist/export/worker";  
-
+import Main from "./components/Main"
+import About from "./about/page";
+import Contact from "./contact/page"
+import Project from "./project/page"
 export default function Home() {
   return (
     <>
-    <Navbar />
     <Main />
-    <Footer />
-    </>
+    <div id="about">
+    <About />
+    </div>
+
+    <div id="contact">
+<Contact />
+    </div>
+
+    <div id="Project">
+      <Project />
+    
+
+    </div>
+      
+  </>
   );
-}
-
-export  function Project() {
-  return(
-    <>
-    <Project />
-    </>
-  )
-
-}
-
-
+};

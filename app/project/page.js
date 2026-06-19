@@ -1,80 +1,248 @@
 "use client";
+import { ChevronDown } from "lucide-react";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import React from "react";
 
-import { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 const projects = [
-    {
-        title: "Inventory management system",
-        description: "A project that is build for optimize work of vendor. ",
-        details:"technology used: python and database schema design. the reason behind building this project is to automate the task of vendor to calculate and store their stock record ,selling stock on the basis of brand name and so on. ",
-        
-    },
-    {
-        title: "Anti theft bike detection system",
-        description: "A system that is build for to secure the two-wheeler from open place. basically it is connected to the IOT devices where the sensor reading the movement of two-wheeler and it sends notification into email of owner",
-        details:
-            "technology software used: Python, JavaScript, Node.js, MongoDB--- technology hardware used: ESP32, MPU6050, NEO-6M gps, active piezo buzzer. " 
+{
+    title: "Inventory Management System",
+    description:
+    "Streamlined vendor operations with intelligent stock tracking.",
+    details:
+    "Technology: Python, Database Schema Design. Automates vendor tasks including stock calculation, storage management, and brand-based selling records.",
+    technologies: ["Python", "SQL", "Database Design"],
     
-    },
-    {
-        title: "vehical booking system",
-        description: "A system is build for the booking the vechical for long-trip as well as short destination with driver or without driver integerate online payment system, pre-booking features, cancel booking and so on ",
-        details:
-            "technology used: react, node.js, JavaScript MongoDB",
-        
-    },
-    {
-        title: "civic watch",
-        description: "A system is build full-stack website to raised voice of public here report the issues, facing into our society ",
-        details:
-            "technology used: java, servlet, jsp",
-        
-    },
-
+},
+{
+    title: "Anti-Theft Bike Detection System",
+    description: "IoT-powered security system with real-time alerts.",
+    details:
+    "Software: Python, JavaScript, Node.js, MongoDB. Hardware: ESP32, MPU6050, NEO-6M GPS, Active Piezo Buzzer. Real-time movement detection with email notifications.",
+    technologies: [
+    "Python",
+    "JavaScript",
+    "Node.js",
+    "MongoDB",
+    "IoT",
+    "ESP32",
+    ],
+    
+},
+{
+    title: "Vehicle Booking System",
+    description: "Full-featured booking platform with online payments.",
+    details:
+    "Technology: React, Node.js, JavaScript, MongoDB. Features include flexible booking, driver options, online payment integration, pre-booking, and cancellation management.",
+    technologies: ["React", "Node.js", "JavaScript", "MongoDB"],
+},
+{
+    title: "Civic Watch",
+    description: "Community-driven civic issue reporting platform.",
+    details:
+    "Technology: Java, Servlet, JSP. Full-stack website empowering citizens to report and track societal issues in their communities.",
+    technologies: ["Java", "Servlet", "JSP"],
+},
 ];
 
+
 export default function Project() {
-    const [openIndex, setOpenIndex] = useState(null);
+const [openIndex, setOpenIndex] = useState(null);
+const [hoveredIndex, setHoveredIndex] = useState(null);
+const [dogImage, setDogImage] = useState("");
 
-    return (
-        <>
-            <Navbar />
+const getDog = async () => {
+    try {
+    const response = await axios.get(API);
 
-            <main className="min-h-screen bg-green-700 px-6 py-16 text-white">
-            <section className="mx-auto max-w-6xl">
-                <h1 className="text-5xl font-semibold mb-6 text-white">Projects</h1>
+      // Save image URL in state
+    setDogImage(response.data.message);
 
-                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {projects.map((p, idx) => (
-        <article key={p.title} className=" bg-slate-700   p-6">
-                                <h3 className="text-2xl font-semibold mb-4 text-white">{p.title}</h3>
-                                <p className="text-sm text-white mb-8">{p.description}</p>
+    console.log(response.data);
+    } catch (error) {
+    console.log(error.message);
+    }
+};
+useEffect(() => {
+    getDog();
+}, []);
 
-                                <div className="flex gap-20">
-                                    <button
-                                        onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
-                                        className="inline-flex items-center rounded-full bg-slate-800 px-4 py-2 text-sm font-medium text-white"
-                                    >
-                                        {openIndex === idx ? "Hide details" : "View more"}
-                                    </button>
+return (
+    <>
+    <div className="flex flex-col items-center mb-10">
+        {dogImage && (
+        <img
+            src={dogImage}
+            alt="Random Dog"
+            className="w-80 h-80 object-cover rounded-xl shadow-lg"
+        />
+        )}
 
-                                
-                                </div>
+    
+    </div>
+    <main className=" bg-balck t-black">
+        {/* Animated background elements */}
+        <div className="absolute  overflow-hidden ">
+        <div className="absolute top-20 left-10 w-72 h-72  rounded-full animate-blob"></div>
+        <div className="absolute top-40 right-10 w-72 h-72"></div>
+        <div className="absolute -bottom-8 left-20 w-72 h-72 bg-black"></div>
+        </div>
 
-                                {openIndex === idx && (
-                                    <div className="mt-4 rounded bg-black p-4 text-sm text-white">
-                                        {p.details}
-                                    </div>
-                                )}
-                            </article>
-                        ))}
+        <section className="relative z-10 mx-auto max-w-7xl px-6 py-20">
+          {/* Hero Section */}
+        <div className="mb-16 text-center">
+            <div className="inline-block mb-5">
+            <span className="px-4 py-2 bg-purple-500/200 border border-purple-500/50 rounded-full text-balck-300 text-sm font-semibold backdrop-blur-sm">
+                my work
+            </span>
+            </div>
+            <h1 className="text-6xl md:text-7xl font-black mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-blue-400">
+            Projects Portfolio
+            </h1>
+            <p className="text-xl text-blue-700 max-w-2xl mx-auto mb-2">
+            Innovative solutions crafted with cutting-edge technologies
+            </p>
+            <div className="h-1 w-24 bg-brown  rounded-full mx-auto mt-6"></div>
+        </div>
+
+          {/* Projects Grid */}
+        <div className="grid gap-8 md:gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mb-9">
+            {projects.map((p, idx) => (
+            <article
+                key={p.title}
+                onMouseEnter={() => setHoveredIndex(idx)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                className="group relative h-full"
+            >
+            
+                <div className="absolute -inset-0.5 bg- from-black-10 to-red-10 rounded-2xl opacity-0 group-hover:opacity-100 blur transition duration-10 group-hover:duration-200"></div>
+
+
+                <div className="relative bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-2xl p-8 border border-slate-700/50 group-hover:border-purple-500/50 transition duration-300 h-full flex flex-col overflow-hidden">
+                
+                
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500">
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent transform -skew-x-12 group-hover:translate-x-full duration-700"></div>
+                </div>
+
+                <div className="relative z-10">
+                    {/* Icon and Status */}
+                    <div className="flex items-start justify-between mb-4">
                     </div>
-                </section>
-            </main>
 
-            <Footer />
-        </>
-    );
+                    {/* Title */}
+                    <h3 className="text-2xl md:text-3xl font-bold mb-3 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 transition duration-300">
+                    {p.title}
+                    </h3>
+
+                    {/* Description */}
+                    <p className="text-gray-300 text-base mb-7 leading-relaxed">
+                    {p.description}
+                    </p>
+
+                    {/* Technology badges */}
+                    <div className="flex flex-wrap gap-2 mb-6">
+                    {p.technologies.map((tech) => (
+                        <span
+                        key={tech}
+                        className="px-3 py-1 bg-gradient-to-r from-white-100 to-black-5000/20 border border-purple-500/30 rounded-full text-purple-200 text-xs font-semibold hover:from-purple-500/40 hover:to-pink-500/40 transition duration-300 cursor-default"
+                        >
+                        {tech}
+                        </span>
+                    ))}
+                    </div>
+
+                    {/* Details Button */}
+                    <button
+                    onClick={() =>
+                        setOpenIndex(openIndex === idx ? null : idx)
+                    }
+                    className="w-full group/btn relative overflow-hidden rounded-lg bg-gradient-to-r from-purple-60 to-pink-600 px-6 py-3 font-semibold text-white transition duration-300 hover:shadow-lg hover:shadow-purple-500 hover:scale-110 transform active:scale-95"
+                    >
+                    <div className="relative flex items-center justify-center gap-2">
+                        <span>
+                        {openIndex === idx ? "Hide Details" : "View Details"}
+                        </span>
+                        <ChevronDown
+                        size={1}
+                        className={`transition-transform duration-300 ${
+                            openIndex === idx ? "rotate-180" : ""
+                        }`}
+                        />
+                    </div>
+                    </button>
+
+                    {/* Expandable Details */}
+                    <div
+                    className={`overflow-hidden transition-all duration-500 ease-out ${
+                        openIndex === idx ? "mt-6 max-h-96" : "max-h-0"
+                    }`}
+                    >
+                    <div className="border-t border-slate-700/50 pt-6">
+                        <div className="bg-gradient-to-br from-purple-500/20 to-black-900 border  rounded-xl p-5 backdrop-blur-sm">
+                        <p className="text-gray-200 text-sm leading-relaxed">
+                            {p.details}
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </article>
+            ))}
+        </div>
+
+        
+        <div className="grid grid-cols-3 gap-8 mt-20 pt-12 border-t border-slate-700/50">
+            <div className="text-center">
+            <div className="text-4xl font-black bg-clip-text text-transparent bg-purple-600 mb-2">
+                4+
+            </div>
+            <p className="text-black-400">Projects Delivered</p>
+            </div>
+            <div className="text-center">
+            <div className="text-4xl font-black bg-clip-text text-transparent bg-purple-600 mb-2">
+                10+
+            </div>
+            <p className="text-black-400">Technologies Used</p>
+            </div>
+            <div className="text-center">
+            <div className="text-4xl font-black bg-clip-text text-transparent bg-purple-600 mb-2">
+                100%
+            </div>
+            <p className="text-gray-400">Custom Built</p>
+            </div>
+        </div>
+        </section>
+    </main>
+      {/* Global styles for animations */}
+    <style jsx>{`
+        @keyframes blob {
+        0%,
+        100% {
+            transform: translate(0, 0) scale(1);
+        }
+        33% {
+            transform: translate(30px, -50px) scale(1.1);
+        }
+        66% {
+            transform: translate(-20px, 20px) scale(0.9);
+        }
+        }
+
+        .animate-blob {
+        animation: blob 7s infinite;
+        }
+
+        .animation-delay-2000 {
+        animation-delay: 2s;
+        }
+
+        .animation-delay-4000 {
+        animation-delay: 4s;
+        }
+    `}</style>
+    </>
+);
 }

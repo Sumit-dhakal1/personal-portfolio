@@ -1,8 +1,19 @@
-import Image from "next/image";
+import Image from "next/image"
+import React from "react"
+
+
 
 export default function Main() {
+
+
+
+
+
 return (
-    <main className="min-h-screen w-full bg-green-700 px-6 py-16 text-white-900">
+    <section id="main">    
+
+
+            <main className="min-h-screen w-full bg-green-700 px-6 py-16 text-white-900">
     <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-10 lg:flex-row lg:gap-16">
         <div className="max-w-2xl space-y-6 ">
     
@@ -43,4 +54,6 @@ return (
         </div>
     </div>
     </main>
-)};
+    </section>
+)
+};
