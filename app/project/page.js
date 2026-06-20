@@ -92,22 +92,18 @@ return (
         <section className="relative z-10 mx-auto max-w-7xl px-6 py-20">
           {/* Hero Section */}
         <div className="mb-16 text-center">
-            <div className="inline-block mb-5">
-            <span className="px-4 py-2 bg-purple-500/200 border border-purple-500/50 rounded-full text-balck-300 text-sm font-semibold backdrop-blur-sm">
-                my work
-            </span>
-            </div>
-            <h1 className="text-6xl md:text-7xl font-black mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-blue-400">
-            Projects Portfolio
+        
+            <h1 className=" md:text-6xl  mb-4 bg-clip-text bg-black-500">
+            PROJECT
             </h1>
-            <p className="text-xl text-blue-700 max-w-2xl mx-auto mb-2">
-            Innovative solutions crafted with cutting-edge technologies
+            <p className=" text-blue-600 max-w-6xl mx-auto mb-4">
+            Innovative solutions of real-world driven problems 
             </p>
-            <div className="h-1 w-24 bg-brown  rounded-full mx-auto mt-6"></div>
+            <div className="h-1 w-24 bg-brown  rounded-full mx-auto mt-4"></div>
         </div>
 
-          {/* Projects Grid */}
-        <div className="grid gap-8 md:gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mb-9">
+        
+        <div className="grid  md:gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mb-10 m-30 p">
             {projects.map((p, idx) => (
             <article
                 key={p.title}
@@ -116,28 +112,28 @@ return (
                 className="group relative h-full"
             >
             
-                <div className="absolute -inset-0.5 bg- from-black-10 to-red-10 rounded-2xl opacity-0 group-hover:opacity-100 blur transition duration-10 group-hover:duration-200"></div>
+                <div className="absolute -inset-0.5 bg-green  "></div>
 
 
-                <div className="relative bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-2xl p-8 border border-slate-700/50 group-hover:border-purple-500/50 transition duration-300 h-full flex flex-col overflow-hidden">
+                <div className="relative bg-orange-200  rounded-3xl p-8  group-hover: transition duration-100 h-full flex flex-col overflow-hidden">
                 
                 
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500">
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent transform -skew-x-12 group-hover:translate-x-full duration-700"></div>
+                <div className="absolute inset-0.5 opacity-0.10 group-hover:opacity-100 transition duration-100 ">
+                    <div className="absolute inset-0 bg-blue-200  transform -skew-x-20 group-hover:translate-x-full duration-700"></div>
                 </div>
 
-                <div className="relative z-10">
+                <div className="relative  z-10">
                     {/* Icon and Status */}
                     <div className="flex items-start justify-between mb-4">
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-2xl md:text-3xl font-bold mb-3 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 transition duration-300">
+                    <h3 className="text-2xl md:text-3xl font-bold mb-10 text-black   group-hover:from-orange-400 group-hover:to-black-400 transition duration-300">
                     {p.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-gray-300 text-base mb-7 leading-relaxed">
+                    <p className="text-black-300 text-base mb-10 leading-relaxed">
                     {p.description}
                     </p>
 
@@ -146,7 +142,7 @@ return (
                     {p.technologies.map((tech) => (
                         <span
                         key={tech}
-                        className="px-3 py-1 bg-gradient-to-r from-white-100 to-black-5000/20 border border-purple-500/30 rounded-full text-purple-200 text-xs font-semibold hover:from-purple-500/40 hover:to-pink-500/40 transition duration-300 cursor-default"
+                        className="px-3 py-1 bg-green-600  rounded-full text-purple-200 text-xs font-semibold"
                         >
                         {tech}
                         </span>
@@ -158,15 +154,15 @@ return (
                     onClick={() =>
                         setOpenIndex(openIndex === idx ? null : idx)
                     }
-                    className="w-full group/btn relative overflow-hidden rounded-lg bg-gradient-to-r from-purple-60 to-pink-600 px-6 py-3 font-semibold text-white transition duration-300 hover:shadow-lg hover:shadow-purple-500 hover:scale-110 transform active:scale-95"
+                    className="w-50 group/btn relative overflow-hidden rounded-lg bg-green-600 px-10 py-3 font-semibold text-white"
                     >
-                    <div className="relative flex items-center justify-center gap-2">
+                    <div className="relative flex items-center justify-center gap-1">
                         <span>
                         {openIndex === idx ? "Hide Details" : "View Details"}
                         </span>
                         <ChevronDown
                         size={1}
-                        className={`transition-transform duration-300 ${
+                        className={`transition-transform duration-30 ${
                             openIndex === idx ? "rotate-180" : ""
                         }`}
                         />
@@ -175,13 +171,13 @@ return (
 
                     {/* Expandable Details */}
                     <div
-                    className={`overflow-hidden transition-all duration-500 ease-out ${
+                    className={`overflow-hidden transition-all duration-100 ease-out ${
                         openIndex === idx ? "mt-6 max-h-96" : "max-h-0"
                     }`}
                     >
-                    <div className="border-t border-slate-700/50 pt-6">
-                        <div className="bg-gradient-to-br from-purple-500/20 to-black-900 border  rounded-xl p-5 backdrop-blur-sm">
-                        <p className="text-gray-200 text-sm leading-relaxed">
+                    <div className=" pt-1">
+                        <div className="bg-white">
+                        <p className="text-black-200 text-sm leading-relaxed">
                             {p.details}
                         </p>
                         </div>
@@ -196,22 +192,22 @@ return (
         
         <div className="grid grid-cols-3 gap-8 mt-20 pt-12 border-t border-slate-700/50">
             <div className="text-center">
-            <div className="text-4xl font-black bg-clip-text text-transparent bg-purple-600 mb-2">
+            <div className="text-4xl font-black mb-2">
                 4+
             </div>
             <p className="text-black-400">Projects Delivered</p>
             </div>
             <div className="text-center">
-            <div className="text-4xl font-black bg-clip-text text-transparent bg-purple-600 mb-2">
+            <div className="text-4xl font-black mb-2">
                 10+
             </div>
             <p className="text-black-400">Technologies Used</p>
             </div>
             <div className="text-center">
-            <div className="text-4xl font-black bg-clip-text text-transparent bg-purple-600 mb-2">
+            <div className="text-4xl font-black  mb-2">
                 100%
             </div>
-            <p className="text-gray-400">Custom Built</p>
+            <p className="text-black-400">self Built</p>
             </div>
         </div>
         </section>

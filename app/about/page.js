@@ -126,21 +126,21 @@ return (
         </section>
 
         <section className=" g:flex-row h-100 px-1">
-        <div className=" bg-blue-400 p-3 h-100  ">
-            <h2 className="text-5xl font-bold text-white text-white-300">
+        <div className=" bg-blue-200 p-3 h-100  ">
+            <h2 className="text-5xl font-bold text-white">
             My approach
             </h2>
 
             <div className="mt-5 grid gap-2 sm:grid-cols-5 ">
-            <div className="  bg-orange-500 p-5 rounded-[1.1rem]">
-                <h3 className="font-semibold text-white">Design</h3>
+            <div className="  bg-orange-300 p-5 rounded-[1.1rem]">
+                <h3 className="font-semibold text-black">Design</h3>
                 <p className="mt-2 text-sm text-white leading-7">
                 plan the system structure in Clean layouts, vibrant gradients
                 subtle motion UI friendly.
                 </p>
             </div>
-            <div className=" bg-orange-500 p-5 rounded-[1.1rem]">
-                <h3 className="font-semibold text-white">Development</h3>
+            <div className=" bg-orange-300 p-5 rounded-[1.1rem]">
+                <h3 className="font-semibold text-black">Development</h3>
                 <p className="mt-2 text-sm text-white leading-7">
                 Trun the design into beautiful and Scalable code with modern
                 frameworks.
@@ -148,7 +148,7 @@ return (
             </div>
 
             <div className=" bg-orange-500 p-5 rounded-[1.1rem] ">
-                <h3 className="font-semibold text-white">Sclable</h3>
+                <h3 className="font-semibold text-black">Sclable</h3>
                 <p className="mt-2 text-sm text-white leading-7">
                 build system that handle growing users in the future easily
                 through Scalable code with modern frameworks and maintainable
@@ -157,7 +157,7 @@ return (
             </div>
 
             <div className=" bg-orange-400 p-5 rounded-[1.1rem]">
-                <h3 className="font-semibold text-white">security</h3>
+                <h3 className="font-semibold text-black">security</h3>
                 <p className="mt-2 text-sm text-white leading-7">
                 protect the system along with data from threats, attracts, and
                 unauthorize access through optimization a long with secure
@@ -165,8 +165,8 @@ return (
                 </p>
             </div>
 
-            <div className=" bg-orange-400 p-5 rounded-[1.1rem]">
-                <h3 className="font-semibold text-white">performance</h3>
+            <div className=" bg-orange-600 p-5 rounded-[1.1rem]">
+                <h3 className="font-semibold text-black">performance</h3>
                 <p className="mt-2 text-sm text-white leading-7">
                 making the system efficiently and reliable for mass users
                 through performance optimization in the system.

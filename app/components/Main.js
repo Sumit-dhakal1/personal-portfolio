@@ -25,7 +25,7 @@ return (
         <div className="flex flex-col gap-4 flex-row">
             <a
             href="/project"
-            className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white"
+            className="inline-flex items-center justify-center rounded-full bg-green-500 px-6 py-3 text-sm font-semibold text-white"
             >
             View projects
             </a>
