@@ -2,9 +2,13 @@ import Main from "./components/Main"
 import About from "./about/page";
 import Contact from "./contact/page"
 import Project from "./project/page"
+import Login from "./login/page"
+
 export default function Home() {
   return (
     <>
+    
+    
     <Main />
     <div id="about">
     <About />
@@ -16,7 +20,6 @@ export default function Home() {
 
     <div id="Project">
       <Project />
-    
 
     </div>
       

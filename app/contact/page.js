@@ -40,9 +40,9 @@ export default function Contact() {
                         I&apos;m open to new projects and collaborations. Send a message and I&apos;ll get back to you as soon as possible.
                         </p>
 
-                    <div className="  p-1 h-9 px-15 mx-5 rounded-full bg-green-600 text- font-bold text-white disabled:opacity-60 transition">
-                        <p className="mt- text-white  leading-7 ">
-                        fell free to contact us
+                    <div className="  p-1 h-9 px-15 mx-15 rounded-full bg-green-600 text- font-bold text-white disabled:opacity-60 transition">
+                        <p className=" text-white  leading-7 ">
+                        fell free to contact.
                             </p>
                         </div>
                     </div>

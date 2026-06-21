@@ -22,13 +22,12 @@ return (
         <div className="relative mx-auto max-w-10xl  gap-1 lg:flex-row ">
             <div className="space-y-5 lg:w-1/1">
             <h1 className="text-4xl tracking-tight text-black text-1xl">
-                I build modern webpage, application potery experiences with
-                elegant motion and strong logic.
+                I build modern web-application and scalable software 
             </h1>
         <p className="max-w-xl text-black-200 sm:text-lg leading-9  ">
                 I am a passionate fullstack developer blending creative UI
                 design with robust backend systems. My work focuses on reliable
-                applications that feel delightful to use.
+                applications.
             </p>
             </div>
 
@@ -42,7 +41,7 @@ return (
             </div>
 
             <div className="space-y-2 ">
-                <div className=" border border-white/20 bg-slate-950/20   p-15 ">
+                <div className=" border border-white/20 bg-slate-950/50   p-15 ">
                 <h3 className="text-lg font-semibold  text-white">Contact</h3>
                 <p className="mt-5 text-white  flex flex-wrap leading-8">
                     Itahari-04, Sunsari, Nepal
