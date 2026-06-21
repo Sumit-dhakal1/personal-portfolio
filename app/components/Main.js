@@ -7,14 +7,28 @@ export default function Main() {
 
 
 return (
-    <section id="main">    
+    <section id="main ">    
+            
+
+            <main className=" text-white relative  bg-cover bg-center  ">
+    <div className="align">
+            <Image 
+            src="/hero.png"
+            alt="Hero illustration"
+            
+            width={2000}
+            height={800}
+            style={{ opacity: 0.85 }} 
+            />
+            </div>
+
+    <div className="mx-auto flex max-w-9x1 absolute inset-1 bg-black/30 gap-10 lg:flex-row  ">
 
 
-            <main className="min-h-screen w-full bg-white-300 px-5 py-5 text-white-900">
-    <div className="mx-auto flex max-w-5xl  items-center justify-center gap-10 lg:flex-row lg:gap-50">
-        <div className="max-w-1xl space-y-10 ">
+
+        <div className="max-w-5x1 space-y-10 px-100 py-60 w-800 ">
     
-        <h1 className="text-5xl  font-bold ">
+        <h1 className="text-6xl  font-bold ">
         
         Sumit Dhakal
         </h1>
@@ -22,37 +36,23 @@ return (
             Aspring a fullstack devloper  with curiosity and contributing
         in the inovative projects.
         </p>
-        <div className="flex flex-col gap-4 flex-row">
+        <div className="flex flex-col gap-4 flex-row ">
             <a
             href="/project"
-            className="inline-flex items-center justify-center rounded-full bg-green-500 px-6 py-3 text-sm font-semibold text-white"
+            className="inline-flex items-center justify-center rounded-full bg-green-500 px-6 py-3 text-sm font-semibold text-white w-50"
             >
             View projects
             </a>
             <a
             href="/contact"
-            className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:border-slate-500 hover:bg-slate-100"
+            className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-1 text-sm font-semibold text-slate-900 transition hover:border-slate-500 hover:bg-slate-100 w-40 "
             >
             Say hello
             </a>
         </div>
         </div>
-
-
-        <div className="relative flex w-full max-w-1xl items-center justify-center">
-                    
-        <div className="photo">
-            <Image 
-            src="/herono.1.jpg"
-            alt="Hero illustration"
-            
-            width={200}
-            height={90}
-            className="h-125 w-full rounded-[3.1rem] object-cover"
-            />
-            </div>
         </div>
-        </div>
+    
     
     </main>
     </section>

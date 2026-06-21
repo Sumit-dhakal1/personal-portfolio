@@ -2,10 +2,9 @@ import { Link } from "react-router-dom";
 
 export default function Login() {
 return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-30 via-blue-400 to-cream-50">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-30 via-blue-400 ">
 
-      {/* Glass Card */}
-    <div className="backdrop-blur-lg bg-black/15 p-8 rounded-2xl shadow-xl w-100 border border-white/3">
+    <div className="backdrop-blur-lg bg-black/20 p-8 rounded-2xl shadow-xl w-100 border border-white/3">
 
         <h2 className="text-2xl font-bold text-white text-center mb-6">
         Login

@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="flex items-center justify-center px-20 bg-red-500">
+      <div className="flex items-center justify-center px-20 bg-black-500/50 backdrop-blur bg-black/30  ">
         <div className="h-10 py-5 w-full flex py-8 items-center justify-center py-4 space-x-5">
           {items.map((item, index) => (
             <a
