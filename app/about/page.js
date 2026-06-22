@@ -16,31 +16,54 @@ const skills = [
 return (
     <>
     <main className="about">
-        <section className="relative overflow-hidden px-100 py-30 bg-white-200  sm:px-10 lg:px-7">
-        <div className="absolute right-11 top-240 h-500  blur-3xl" />
+        <section className="relative overflow-hidden px- py-30 bg-white-200  sm:px-10 lg:px-7">
+        <div className=" top-240 h-50  blur-3xl" />
 
         <div className="relative mx-auto max-w-10xl  gap-1 lg:flex-row ">
             <div className="space-y-5 lg:w-1/1">
             <h1 className="text-4xl tracking-tight text-black text-1xl">
-                I build modern web-application and scalable software 
+                I build modern web-application and scalable software
             </h1>
-        <p className="max-w-xl text-black-200 sm:text-lg leading-9  ">
+            <p className="max-w-xl text-black-200 sm:text-lg leading-9  ">
                 I am a passionate fullstack developer blending creative UI
                 design with robust backend systems. My work focuses on reliable
                 applications.
             </p>
             </div>
 
-            <div className=" flex flex direction shadow-4xl shadow-slate-150/10 ">
-            <div className="flex h-1 p-10 animate-float display text-black shadow-sky-10/5">
-                <div className="space-y-10 ">
-                <h1 className="text-5xl font-semibold">
-                    HI, iam software engineer
-                </h1>
-                </div>
-            </div>
+            <div className="flex flex-wrap text-black shadow-sky-100/5">
 
-            <div className="space-y-2 ">
+  <div className="px-20 py-20">
+    <h1 className="text-5xl font-semibold">
+      HI, I am Software Engineer
+    </h1>
+  </div>
+
+  <div className="flex flex-wrap py-5 px-3 gap-5 w-96">
+
+    {skills.map((skills, index) => (
+      <span
+        key={skills}
+        className="px-4 py-2 rounded-xl bg-blue-500/50 text-sm text-gray-800 
+        transition-all duration-300 ease-in-out 
+        hover:bg-sky-700 hover:text-white hover:scale-110"
+        
+        style={{
+          animation: `fadeInUp 0.5s ease forwards`,
+          animationDelay: `${index * 0.2}s`,
+          opacity: 0
+        }}
+      >
+        {skills}
+      </span>
+    ))}
+
+
+</div>
+
+        
+
+            <div className="space-y-2  ">
                 <div className=" border border-white/20 bg-slate-950/50   p-15 ">
                 <h3 className="text-lg font-semibold  text-white">Contact</h3>
                 <p className="mt-5 text-white  flex flex-wrap leading-8">
@@ -74,7 +97,7 @@ return (
                     {" "}
                     secondary: merryland higher secondary school 2023 passout
                     faculty- business management
-                    </h2>
+                </h2>
 
                     <h2 className=" mt-4 leading-6  text-white-400">
                     {" "}
@@ -108,27 +131,13 @@ return (
                 </div>
             </div>
             </div>
-            <p className=" uppercase text-5xl font-bold text-black  p-10 flex flex-wrap text-black-300">
-            Skills
-            </p>
-            <div className="mt-1  flex flex-wrap gap-5">
-            {skills.map((skill) => (
-                <span
-                key={skill}
-                className="rounded-1x2 bg-black/5 px-4 py-2 text-sm text-black-200 ring-1 ring-white/10 transition hover:bg-sky-700/100 hover:text-white"
-                >
-                {skill}
-                </span>
-            ))}
-            </div>
+        
         </div>
         </section>
 
         <section className=" g:flex-row h-100 px-1">
         <div className=" bg-blue-200 p-3 h-100  ">
-            <h2 className="text-5xl font-bold text-white">
-            My approach
-            </h2>
+            <h2 className="text-5xl font-bold text-white">My approach</h2>
 
             <div className="mt-5 grid gap-2 sm:grid-cols-5 ">
             <div className="  bg-orange-300 p-5 rounded-[1.1rem]">
@@ -152,7 +161,7 @@ return (
                 build system that handle growing users in the future easily
                 through Scalable code with modern frameworks and maintainable
                 architecture.
-            </p>
+                </p>
             </div>
 
             <div className=" bg-orange-400 p-5 rounded-[1.1rem]">
@@ -167,7 +176,7 @@ return (
             <div className=" bg-orange-600 p-5 rounded-[1.1rem]">
                 <h3 className="font-semibold text-black">performance</h3>
                 <p className="mt-2 text-sm text-white leading-7">
-                making the system efficiently and reliable for mass users
+            making the system efficiently and reliable for mass users
                 through performance optimization in the system.
                 </p>
             </div>
@@ -176,5 +185,5 @@ return (
         </section>
     </main>
     </>
-)
-};
+);
+}

@@ -28,6 +28,8 @@ export default function Navbar() {
             > Login </a>
         </div>
       </div>
+    
+  
     </>
   );
 }
