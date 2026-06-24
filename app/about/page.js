@@ -21,16 +21,16 @@ export default function About() {
   ];
 
   return (
-    <main className="bg-white text-gray-900 min-h-screen font-sans">
+    <main className="bg-white text-black-900 min-h-screen font-sans">
 
-      {/* ── Hero ── */}
+
       <section className="max-w-6xl mx-auto px-8 py-20 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
 
         {/* Left */}
         <div>
           <h1 className="text-4xl lg:text-5xl font-extrabold leading-tight text-black-900 mb-5">
             I build modern web apps &{" "}
-            <span className="text-green-400">scalable software</span>
+            <span className="text-green-600">scalable software</span>
           </h1>
           <p className="text-black-500 text-base leading-relaxed max-w-md">
             Passionate about blending creative UI design with robust backend systems.
@@ -121,7 +121,7 @@ export default function About() {
           </ul>
         </div>
 
-     
+    
         <div className="md:col-span-2 bg-black-510 border border-gray-200 rounded-2xl p-7 hover:border-sky-200 hover:shadow-sm transition-all duration-200">
           <p className=" font-bold  uppercase text-green-600 mb-4">
             Soft Skills
@@ -140,7 +140,7 @@ export default function About() {
       {/* ── Approach ── */}
       <section className="bg-gray-50 border-t border-gray-100 py-16 px-8">
         <div className="max-w-6xl mx-auto">
-         
+        
           <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-10">
             My approach
           </h2>

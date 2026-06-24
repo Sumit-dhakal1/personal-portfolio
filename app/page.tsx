@@ -4,7 +4,7 @@ import Contact from "./contact/page"
 import Project from "./project/page"
 import Login from "./login/page"
 import dashboard from "./dashboard/page"
-
+import login from "./login/register"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 

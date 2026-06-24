@@ -10,8 +10,8 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="flex items-center justify-center px-20 bg-yellow-100 backdrop-blur bg-black/10  ">
-        <div className="h-10 py-5 w-full flex py-8 items-center justify-center py-4 space-x-5 ">
+      <div className="flex items-center justify-center px-20 bg-white-500 backdrop-blur bg-black/10  ">
+        <div className="h-3 py-5 w-full flex py-8 items-center justify-center py-4 space-x-5 ">
           {items.map((item, index) => (
             <a
               key={index}
@@ -22,10 +22,17 @@ export default function Navbar() {
             </a>
           ))}
         </div>
-        <div>
+        <div className="bg-green-600 px-5 py-1 bg-blue-100 text-black rounded-full  ">
             <a href="/login"
-            className="text-black hover:text-white"
+            className="text-white hover:text-white"
             > Login </a>
+        </div>
+
+
+          <div className="bg-green-600 px-5 py-1  bg-blue-100 text-black rounded-full ">
+            <a href="/register"
+            className="text-white hover:text-white"
+            > register </a>
         </div>
       </div>
     
