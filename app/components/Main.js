@@ -10,49 +10,42 @@ return (
     <section id="main ">    
             
 
-            <main className=" text-white relative  bg-cover bg-center  ">
-    <div className="align">
-            <Image 
-            src="/hero.png"
-            alt="Hero illustration"
-            
-            width={2000}
-            height={800}
-            style={{ opacity: 0.85 }} 
-            />
-            </div>
+            <main className=" text-white relative h-200   gap-1 relative h-screen bg-[#0A0A0A] overflow-hidden flex items-center justify-center  ">
 
-    <div className="mx-auto flex max-w-9x1 absolute inset-1 bg-black/30 gap-10 lg:flex-row  ">
-
-
-
-        <div className="max-w-5x1 space-y-10 px-100 py-60 w-800 ">
     
-        <h1 className="text-6xl  font-bold ">
+    <div className="absolute w-[600px] h-[600px] bg-yellow-300 rounded-full blur-[120px] top-[-100px] left-[-100px] opacity-100"></div>
+
+      <div className="absolute w-[600px] h-[600px] bg-orange-500 rounded-full blur-[120px] top-[-100px] right-[-100px] opacity-90"></div>
+
+      <div className="absolute w-[600px] h-[600px] bg-orange-90 rounded-full blur-[120px] bottom-[-190px] right-[0px] opacity-80"></div>
+
+      <div className="relative z-10 text-white max-w-xl px-6">
+
+        <h1 id="FONT" className="text-5xl md:text-2x2 font-bold  mb-10 px-10 ">
         
-        Sumit Dhakal
+          HI iam software engineer 
         </h1>
-        <p className=" leading-7   text-lg">
-            Aspring a fullstack devloper  with curiosity and contributing
-        in the inovative projects.
+
+        <p className="text-black-100 mb-6">
+         
         </p>
-        <div className="flex flex-col gap-4 flex-row ">
-            <a
-            href="/project"
-            className="inline-flex items-center justify-center rounded-full bg-green-500 px-6 py-3 text-sm font-semibold text-white w-50"
-            >
-            View projects
+
+        <div className="flex gap-4">
+          <button className="px-20 py-3 bg-green-600 hover:bg-indigo-700 rounded-full">
+            <a href="/project">
+  view project 
             </a>
-            <a
-            href="/contact"
-            className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-1 text-sm font-semibold text-slate-900 transition hover:border-slate-500 hover:bg-slate-100 w-40 "
-            >
-            Say hello
+          
+          </button>
+
+          <button className="px-10 py-3 bg-blue-100 text-black rounded-full">
+            <a href="/contact">
+contact 
             </a>
+            
+          </button>
         </div>
-        </div>
-        </div>
-    
+      </div>
     
     </main>
     </section>

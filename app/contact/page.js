@@ -47,7 +47,7 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div className=" flex items-center justify-center bg-gradient-to-br from-blue-30 via-blue-300   ">
+                    <div className=" flex items-center justify-center bg-gradient-to-br from-blue-30 via-blue-300  ">
                         <form onSubmit={handleSend} className="relative space-y-4 backdrop-blur-lg bg-black/10 p-5 rounded-2xl shadow-2x5 w-150 border border-white/3 ">
                             <div className="input group">
                                 <label className="block  mb-1 text-black font-bold">Name</label>

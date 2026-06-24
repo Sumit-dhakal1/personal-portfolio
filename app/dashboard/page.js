@@ -10,8 +10,8 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-3xl font-bold mb-5">Hello </h1>
+    <div className="flex flex-col items-center justify-center h-screen bg-black ">
+      <h1 className="text-3xl font-bold mb-5"> wellcome dashboard Hello </h1>
 
       <button
         onClick={handleLogout}

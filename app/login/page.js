@@ -12,12 +12,13 @@ const correctusername = "admin@gmail.com";
 const correctpassword = "1234";
 
 const handleLogin = (e) => {
-    e.preventDefault();
+    e.preventDefault()
+
 
     if (username === correctusername && password === correctpassword) {
     router.push("/dashboard"); 
     } else {
-    alert("Invalid credentials ");
+    alert(" invalid ");
     }
     
 };
