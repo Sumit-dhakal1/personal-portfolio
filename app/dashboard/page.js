@@ -13,7 +13,7 @@ router.push("/login");
     
   };
   return (
-    <div className="flex min-h-screen bg-gray-100 text-white">
+    <div className="flex min-h-screen bg-gray-100 text-black">
 
       {/* Sidebar */}
       <aside className="w-64 bg-white border-r p-6 flex flex-col justify-between">
@@ -28,7 +28,7 @@ router.push("/login");
               Projects
             </div>
           <form >
-            <div className="bg-red-600  px-9 py-2 mx-10 rounded-lg cursor-pointer mt-100">
+            <div className="bg-red-600 text-white px-9 py-2 mx-10 rounded-lg cursor-pointer mt-100">
             <button onClick={handleLogout}>
               logout
             </button>

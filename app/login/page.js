@@ -49,7 +49,7 @@ return (
         />
 
         {/* Button */}
-        <button className="w-full py-2 rounded-lg bg-white text-blue-500 font-semibold hover:bg-blue-100 transition">
+        <button className="w-full py-2 rounded-lg bg-white text-black-500 font-bold hover:bg-green-100 transition">
         Login
         </button>
     </div>

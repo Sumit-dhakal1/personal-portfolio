@@ -1,6 +1,6 @@
 export default function Footer() {
     const some = [
-        {name : "Develop by smith", href : "/"}
+        {name : "Develop by smith 🐛", href : "/"}
     ]
     return (
         <>
